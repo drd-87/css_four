@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #dadada;
+  font-size: 16px, sans-serif;
+  width: 100%;
+
+}
+.container {
+width: 100%;
+text-align: center;
+}
+
+/** Direct descendant for main heading **/
+.container > h1 {
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding-top: 8%;
+    text-align: center;
+
+}
+
+/******* shared CSS for location headers *******/
+
+div > h1 {
+  position: absolute;
+  font-size: 1.2em;
+  left: 10%
+}
+
+/**** Baku Header ****/
+.preview-baku > h1 {
+  top: 85px;
+
+}
+
+/*** London Header ***/
+.preview-london > h1{
+  top: 335px;
+}
+
+/*** Madrid Header ***/
+.preview-madrid > h1 {
+  top: 565px;
+}
+
+/*** Rome Header ***/
+.preview-rome > h1 {
+  top: 775px;
+}
+
+div {
+  display: inline-block;
+}
+
+ img {
+  margin: 0 auto;
+  padding: 8px 0px;
+  max-height: 300px;
+  min-height: 140px;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 575px){
+  img {
+    max-height: 20%;
+    max-width: 44%;
+    margin: 1% auto;
+  }
+
+  div {
+    max-width: 575px;
+  }
+}
+
+
+/***Media query targeting images **/
+/********
+@media screen and (min-width: 575px){
+  div img {
+    max-height: 20%;
+    max-width: 45%;
+    margin: 1% auto;
+    padding: 0px;
+  }
+
+  div {
+    min-width: 575px;
+  }
+
+  .preview-london > h1{
+    top: 85px;
+    left: 55%;
+  }
+}
+*****/
+/*
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1px;
+    padding: 0px inherit;
+    max-width: 44%;
+
+  }
+}
+
+@media screen and (min-width: 575px){
+   div {
+    margin: 1px;
+    padding: 0px inherit;
+    max-width: 50%;
+
+  }
+}
+*/
